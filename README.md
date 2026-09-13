@@ -4,58 +4,56 @@
 
 # UNDERGROUND SOFTWARE ENGINEERS — NYC
 
-**An engineering crew building AI-accelerated software beneath the surface of the city.**
+**An NYC engineering crew. Any software for the web, any language. AI-driven development first.**
 
-> The machine writes the code. We design the tracks.
 > AI generates. Engineers decide.
 
-We are a collective of NYC software engineers. We build any software for the web,
-in any language, for any stack. AI-driven development comes first: the machine
-generates at full speed, engineers decide where the tracks go, and what ships runs
-in production. The work is delivered the way the city runs: as lines, switches,
-signals, and transfers.
+We build web software on whatever stack the job demands. The machine writes at full
+speed; someone still has to know where the tracks go. We run the work the way the city
+runs trains: lines, switches, signals, transfers.
 
-## Who we are
+## What that means
 
-- **Engineers, not decorators.** We build systems that survive, not dashboards that demo.
-- **The machine is a tool.** AI produces code fast. We decide where the tracks go, what
-  the system has to survive, and what happens when a signal goes red.
-- **Our own infrastructure is built, signed, and operated in-house.** The artifact
-  system, the link engine, the tooling — we run what we build. Client work rides
-  whatever stack the job demands.
+- **Engineers first.** AI output is a starting gun, not a deliverable. An engineer decides
+  what should exist, where it belongs, and what happens when a signal goes red.
+- **We run what we build.** Our artifact system, our link engine, our tooling — built,
+  signed, and operated in-house.
+- **The city is the network.** The work ships to the street, not just to a dashboard.
 
 ## The door is physical
 
-This is not a landing page collection. The main site is deliberately **gated**: entry is a
-**signed physical artifact** — a QR code live in the city that verifies itself in the
-browser before anything renders. No forms. No leaked portfolio. Scan it, and the decoder
-decides.
+The main site is gated. Entry is a signed artifact — a QR code living in the city — and
+it verifies itself in your browser before anything renders. No forms. No preview.
 
-## Public surfaces
+```
+ARTIFACT IN THE FIELD → SCAN → DECODER VERIFIES → THE SITE OPENS
+```
+
+Refuse an artifact and the decoder tells you why — and where the live ones are.
+
+## The surfaces
 
 | Surface | What it is |
 | --- | --- |
-| [The main site](https://underground-engineer-nyc.myfilebase.site/) | The presentation — gated. The signal lives in its code. |
-| [Applications repo](https://github.com/underground-software-engineers-nyc/underground-engineer-NYC-job-board) | Join the crew — GitHub issues & pull requests, one door. |
-| [This org](https://github.com/underground-software-engineers-nyc) | Public surfaces + docs. |
+| [The main site](https://underground-engineer-nyc.myfilebase.site/) | The presentation. Gated. The signal is buried in its code. |
+| [The hiring hall](https://github.com/underground-software-engineers-nyc/underground-engineer-NYC-job-board) | Where you apply. GitHub issues and PRs — one door. |
 
-## Want in on the crew
+Everything else in this org is either crew-side or infrastructure.
 
-Read the code. A quest is buried in the main site — solving it hands you the one
-application channel. Applications are **Issues or Pull Requests** on the applications repo.
-Answers and portfolio go in a gist or external link. The crew reads every one.
+## Want in
 
-Accepted engineers get a **signed crew pass**, join the private crew repository, and
-hold the board. Membership means you **print your own signed artifacts and distribute
-them across the city** — every scan credits your handle — and **work finds you**:
-clients and crew contact you through the hall.
+A quest is buried in the main site's code. Solve it and you hold the one application
+channel. The crew reads every application.
 
-## Repo
+Accepted engineers mint and distribute their own signed artifacts across the city —
+every scan credits their handle — and work reaches them through the hall.
 
-- `index.html` — this public site (pure static, no build step, no trackers).
-- `brand/` — the UGE emblem + derived icons (favicon, apple touch, brand mark).
-- `llms.txt` — machine-readable summary for agents and crawlers.
+## This repo
+
+The org's public front. `index.html` is a static page — no build step, no trackers.
+`brand/` holds the emblem and its derived icons. `llms.txt` is the machine-readable
+summary for agents and crawlers.
 
 ---
 
-*ALL WORK STAYS UNDERGROUND.*
+*BUILT UNDERGROUND. SHIPPED TO THE STREET.*
