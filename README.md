@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="brand/icon-black-512.png" alt="UGE" width="160">
+</p>
+
 # UNDERGROUND SOFTWARE ENGINEERS — NYC
 
 **An engineering crew building AI-accelerated software beneath the surface of the city.**
@@ -5,17 +9,20 @@
 > The machine writes the code. We design the tracks.
 > AI generates. Engineers decide.
 
-We are a collective of NYC software engineers who build real systems — static-first,
-self-hosted, engineered, and in production. The work is delivered the way the city
-runs: as lines, switches, signals, and transfers.
+We are a collective of NYC software engineers. We build any software for the web,
+in any language, for any stack. AI-driven development comes first: the machine
+generates at full speed, engineers decide where the tracks go, and what ships runs
+in production. The work is delivered the way the city runs: as lines, switches,
+signals, and transfers.
 
 ## Who we are
 
 - **Engineers, not decorators.** We build systems that survive, not dashboards that demo.
 - **The machine is a tool.** AI produces code fast. We decide where the tracks go, what
   the system has to survive, and what happens when a signal goes red.
-- **Everything is built, signed, and operated in-house.** From the sites we ship to the
-  artifacts in the field.
+- **Our own infrastructure is built, signed, and operated in-house.** The artifact
+  system, the link engine, the tooling — we run what we build. Client work rides
+  whatever stack the job demands.
 
 ## The door is physical
 
@@ -39,7 +46,9 @@ application channel. Applications are **Issues or Pull Requests** on the applica
 Answers and portfolio go in a gist or external link. The crew reads every one.
 
 Accepted engineers get a **signed crew pass**, join the private crew repository, and
-hold the board.
+hold the board. Membership means you **print your own signed artifacts and distribute
+them across the city** — every scan credits your handle — and **work finds you**:
+clients and crew contact you through the hall.
 
 ## Repo
 
