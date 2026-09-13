@@ -1,0 +1,56 @@
+# SURFACES — this repo is the org's public front.
+#
+# Every push checks that what visitors see is not broken:
+#   - README links resolve (well-formed, no dead placeholders)
+#   - files the README references actually exist (emblem, icons)
+#   - llms.txt keeps the crew identity — the machine-readable summary is
+#     a public surface too
+
+name: surfaces
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: README links are well-formed
+        run: |
+          BAD=$(grep -oE '\]\([^)]+\)' README.md | grep -vE '\]\((https://|\.\/|#)' || true)
+          if [ -n "$BAD" ]; then
+            echo "::error::README contains non-absolute link targets: $BAD"
+            exit 1
+          fi
+          echo "link targets well-formed ✓"
+
+      - name: README-referenced files exist
+        run: |
+          grep -oE 'src="[^"]+"' README.md | sed 's/src="//; s/"//' | while read -r f; do
+            test -f "$f" || { echo "::error::README references missing file: $f"; exit 1; }
+            echo "ok: $f"
+          done
+
+      - name: llms.txt carries the crew identity
+        run: |
+          test -f llms.txt || { echo "::error::llms.txt missing"; exit 1; }
+          grep -q "Underground Software Engineers of NYC" llms.txt \
+            || { echo "::error::llms.txt lost the crew identity"; exit 1; }
+          if grep -qiE "\bEnzo\b|Vezzaro" llms.txt; then
+            echo "::error::llms.txt must not promote a person — the crew is the identity"
+            exit 1
+          fi
+          echo "llms.txt ✓"
+
+      - name: index.html stays static and tracker-free
+        run: |
+          if grep -qiE "googletagmanager|google-analytics|hotjar|mixpanel|segment\.com" index.html; then
+            echo "::error::tracker reference found in index.html — this surface stays clean"
+            exit 1
+          fi
+          echo "index.html clean ✓"
