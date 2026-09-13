@@ -1,0 +1,32 @@
+# Underground Software Engineers of NYC
+> AI generates. Engineers decide.
+
+LLM-friendly summary of the [Underground Software Engineers NYC](https://underground-software-engineers-nyc.github.io/underground-software-engineers-nyc/) collective.
+
+## Name
+
+Underground Software Engineers NYC (the crew, the collective).
+
+## Tagline
+
+- AI writes the code. We design the tracks.
+- AI generates. Engineers decide.
+
+## Who
+
+An NYC engineering crew building AI-accelerated software in production. Engineers, not decorators. Systems, not dashboards. Static-first, self-hosted, signed, operated in-house.
+
+## How the experience works
+
+The main site is deliberately gated. Entry is a signed physical QR artifact live in the city; it verifies in the browser before anything renders. No forms, no leaked portfolio.
+
+## Public surfaces
+
+- Collective site (this page): https://underground-software-engineers-nyc.github.io/underground-software-engineers-nyc/
+- Gated main site (the presentation, the signal): https://underground-engineer-nyc.myfilebase.site/
+- Applications (GitHub issues & PRs only): https://github.com/underground-software-engineers-nyc/underground-engineer-NYC-job-board
+- GitHub org: https://github.com/underground-software-engineers-nyc
+
+## Joining
+
+Applications happen as GitHub Issues or Pull Requests on the applications repo (answers + portfolio in a gist or external link). Accepted engineers receive a signed crew pass. Everything else is public record.
