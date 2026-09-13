@@ -44,6 +44,7 @@ hold the board.
 ## Repo
 
 - `index.html` — this public site (pure static, no build step, no trackers).
+- `brand/` — the UGE emblem + derived icons (favicon, apple touch, brand mark).
 - `llms.txt` — machine-readable summary for agents and crawlers.
 
 ---

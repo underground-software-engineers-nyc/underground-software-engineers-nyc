@@ -9,7 +9,13 @@
     <meta property="og:title" content="UNDERGROUND SOFTWARE ENGINEERS — NYC" />
     <meta property="og:description" content="An NYC crew of software engineers building AI-accelerated systems. The machine writes. We navigate. Entry is physical." />
     <meta name="twitter:card" content="summary" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23050505'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%23ff6600' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23ff6600'/%3E%3C/svg%3E" />
+    <link rel="icon" type="image/png" sizes="64x64" href="./brand/favicon-64.png" />
+    <link rel="icon" type="image/png" sizes="256x256" href="./brand/brand-mark.png" />
+    <link rel="apple-touch-icon" href="./brand/apple-touch-icon.png" />
+    <meta property="og:image" content="https://underground-software-engineers-nyc.github.io/underground-software-engineers-nyc/brand/brand-mark.png" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
+    <meta name="twitter:image" content="https://underground-software-engineers-nyc.github.io/underground-software-engineers-nyc/brand/brand-mark.png" />
     <title>UNDERGROUND SOFTWARE ENGINEERS — NYC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -190,6 +196,7 @@
         font-size: 0.6rem;
         color: var(--signal);
       }
+      .hud-bullet img { width: 16px; height: 16px; display: block; object-fit: cover; }
       .hud-clock { color: var(--ink-faint); }
 
       /* ---------- buttons ---------- */
@@ -318,6 +325,18 @@
 
       /* ---------- copy ---------- */
 
+      .hero-emblem {
+        margin: 28px 0 0;
+        width: 196px;
+        height: 196px;
+        display: inline-block;
+        border: 1px solid var(--line-strong);
+        background: var(--bg);
+        padding: 2px;
+        line-height: 0;
+      }
+      .hero-emblem img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
       .lede {
         font-size: clamp(1.05rem, 2.2vw, 1.4rem);
         line-height: 1.65;
@@ -398,7 +417,7 @@
   <body>
     <header class="hud">
       <span class="hud-ident">
-        <span class="hud-bullet">UGE</span>
+        <span class="hud-bullet"><img src="./brand/brand-mark.png" alt="" width="18" height="18" /></span>
         UNDERGROUND SOFTWARE ENGINEERS — NYC
       </span>
       <span class="hud-clock" id="clock">LOCAL: —:—</span>
@@ -412,6 +431,9 @@
           UNDERGROUND<br />
           SOFTWARE <span class="dim">ENGINEERS</span>
         </h1>
+        <div class="hero-emblem" aria-hidden="true">
+          <img src="./brand/icon-black-512.png" alt="" width="196" height="196" />
+        </div>
         <p class="u-mono" style="margin: 26px 0 0; line-height: 2; max-width: 640px;">
           A CREW OF ENGINEERS BENEATH THE SURFACE OF THE CITY.<br />
           THE MACHINE WRITES THE CODE. WE DESIGN THE TRACKS.<br />
